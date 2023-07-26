@@ -1,5 +1,4 @@
 export class Negociacao {
-
     constructor(
         private _data: Date, 
         public readonly quantidade: number, 
@@ -20,7 +19,6 @@ export class Negociacao {
         const date = new Date(dataString.replace(exp, ','));
         const quantidade = parseInt(quantidadeString);
         const valor = parseFloat(valorString);
-
         return new Negociacao(date, quantidade, valor);
     }
 }
